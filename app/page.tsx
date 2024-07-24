@@ -1,4 +1,4 @@
-import { Container } from "../components/ui/Container"
+import { Container } from "@/components/ui/Container"
 
 export default function Home() {
   const isAvailable = true
