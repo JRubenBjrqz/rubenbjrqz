@@ -1,4 +1,4 @@
-import { Container } from "@/components/ui/Container"
+import { Container } from '@/components/ui/Container'
 
 export default function Home() {
   const isAvailable = true
@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Container className="mt-20 sm:mt-32">
-        <div className=" bg-red-600">
+        <div>
           <p>Hello World</p>
         </div>
       </Container>
