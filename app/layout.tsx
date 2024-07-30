@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`flex flex-col h-full`}>
-        <div className="relative mb-16 sm:mb-32">
+        <div className="relative">
           <main>{children}</main>
         </div>
       </body>
