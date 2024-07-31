@@ -87,3 +87,10 @@ export function Card({ as: Component = 'div', children, className = '',  ...prop
         </Component>
     )
 }
+
+Card.Link = CardLink
+Card.Pill = CardPill
+Card.Title = CardTitle
+Card.Description = CardDescription
+Card.CTA = CardCTA
+Card.Eyebrow = CardEyebrow
