@@ -7,21 +7,24 @@ export default function Home() {
   return (
     <>
       <Container>
-        <div className="grid grid-cols-6 gap-7 grid-rows-12 sm:grid-rows-7 md:grid-rows-6 lg:grid-rows-2">
-          <div className="relative h-full col-span-6 overflow-hidden sm:col-span-3 md:col-span-3 lg:col-span-3 md:h-80 border border-red-500">
+        <div className="grid grid-cols-10 grid-rows-6 gap-7 p-5 min-h-[52rem]">
+          <div className="relative col-span-4 row-span-4 border border-red-500">
             {/* About */}
           </div>
-          <div className="relative col-span-6 gap-2 sm:col-span-3 md:col-span-3 lg:col-span-3 h-80 border border-blue-500">
+          <div className="relative col-span-6 row-span-2 border border-blue-500">
             {/* Work Experience */}
           </div>
-          <div className="relative col-span-6 overflow-hidden sm:col-span-3 md:col-span-3 lg:col-span-2 h-80 border border-orange-500">
+          <div className="relative col-span-3 row-span-2 border border-orange-500">
             {/* Stack */}
           </div>
-          <div className="relative grid col-span-6 grid-rows-3 gap-4 sm:col-span-3 md:col-span-3 lg:col-span-2 h-80 border border-green-500">
+          <div className="relative col-span-3 row-span-2 border border-green-500">
             {/* Contact */}
           </div>
-          <div className="relative col-span-6 sm:col-span-3 md:col-span-3 lg:col-span-2 border border-pink-500">
+          <div className="relative col-span-7 row-span-2 border border-pink-500">
             {/* Projects */}
+          </div>
+          <div className="relative col-span-3 row-span-2 border border-yellow-500">
+            {/* Learning */}
           </div>
         </div>
       </Container>
