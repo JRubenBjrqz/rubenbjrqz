@@ -11,10 +11,10 @@ function OuterContainer({ children, className = '', ...props }: ContainerProps) 
 function InnerContainer({ children, className = '', ...props }: ContainerProps) {
     return (
         <div
-        className={`relative h-screen p-4 sm:px-8 lg:px-12 ${className}`}
+        className={`relative p-4 sm:px-8 lg:px-12 ${className}`}
         {...props}
       >
-        <div className="max-w-full h-full mx-auto">{children}</div>
+        <div className="max-w-full mx-auto">{children}</div>
       </div>
     )
 }
