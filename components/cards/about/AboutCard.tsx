@@ -12,6 +12,11 @@ export function About({ className = '' }: AboutProps) {
             <div className="flex flex-row justify-between w-full gap-2">
                 <SocialLinks/>
             </div>
+            <h1>Rubén Bojórquez</h1>
+            <p>
+                I'm Frontend Developer with experience as UX/UI Designer. 
+                Currently working at Sofía XT. Based in Hermosillo, Mexico.
+            </p>
         </Card>
     )
 }

@@ -13,29 +13,29 @@ function SocialLink({ icon: Icon, ...props }: SocialLinksProps) {
   )
 }
 
-// export function SocialLinks() {
-//   return (
-//     <div className="flex items-center justify-start gap-6 mt-6">
-//       {socialLinks.map((link, index) => (
-//         <div className="relative group" key={index}>
-//           <div className="transition-all translate-y-5 opacity-0 group-hover:translate-y-3 group-hover:opacity-100">
-//             <div className="relative flex items-center group">
-//               <LiaExternalLinkAltSolid className="absolute w-4 h-4 transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100" />
-//             </div>
-//           </div>
-//           <SocialLink
-//             href={link.href}
-//             rel="noopener noreferrer"
-//             target="_blank"
-//             ariaLabel={link.label}
-//             className="transition-all group-hover:opacity-20 group-hover:blur-sm sm:h-7 blur-0 grayscale-0"
-//             icon={link.icon}
-//           />
-//         </div>
-//       ))}
-//     </div>
-//   )
-// }
+export function SocialLinks({}) {
+  return (
+    <div className="flex items-center justify-start gap-6 mt-6">
+      {socialLinks.map((link, index) => (
+        <div className="relative group" key={index}>
+          <div className="transition-all translate-y-5 opacity-0 group-hover:translate-y-3 group-hover:opacity-100">
+            <div className="relative flex items-center group">
+              <LiaExternalLinkAltSolid className="absolute w-4 h-4 transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100" />
+            </div>
+          </div>
+          <SocialLink
+            href={link.href}
+            rel="noopener noreferrer"
+            target="_blank"
+            ariaLabel={link.label}
+            className="transition-all group-hover:opacity-20 group-hover:blur-sm sm:h-7 blur-0 grayscale-0"
+            icon={link.icon}
+          />
+        </div>
+      ))}
+    </div>
+  )
+}
 
 // export function LinkText({ className, href, children, icon: Icon, outline }) {
 //   return (
