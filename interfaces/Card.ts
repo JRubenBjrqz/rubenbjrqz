@@ -41,5 +41,4 @@ export interface CardEyebrowProps {
     decorate: boolean
     className?: string
     children: ReactNode
-
 }

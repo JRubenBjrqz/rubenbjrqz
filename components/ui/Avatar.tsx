@@ -5,19 +5,19 @@ import { cva } from 'class-variance-authority'
 import type { AvatarProps } from '@/interfaces'
 
 const avatarVariants = cva(
-  'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 ',
-  {
-    variants: {
-      size: {
-        default: 'w-10',
-        sm: 'w-6',
-        lg: 'w-16',
-      },
-    },
-    defaultVariants: {
-      size: 'default',
-    },
-  }
+    'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
+    {
+        variants: {
+            size: {
+                default: 'w-10',
+                sm: 'w-6',
+                lg: 'w-16',
+            },
+        },
+        defaultVariants: {
+            size: 'default',
+        },
+    }
 )
 
 export function ImgAvatar({ className = '', size, ...props }: AvatarProps) {
