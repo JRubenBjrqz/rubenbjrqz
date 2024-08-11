@@ -2,6 +2,7 @@ import { About } from '@/components/cards/about/AboutCard'
 import { Resume } from '@/components/cards/resume/ResumeCard'
 import { Contact } from '@/components/cards/contact/ContactCard'
 import { Container } from '@/components/ui/Container'
+import { Stack } from '@/components/cards/stack/StackCard'
 
 export default function Home() {
   const isAvailable = true
@@ -16,9 +17,9 @@ export default function Home() {
           <Resume className="relative col-span-10 border border-blue-500 md:col-span-5 lg:col-span-6 lg:row-span-2">
             {/* Work Experience */}
           </Resume>
-          <div className="relative col-span-10 border border-orange-500 md:col-span-5 lg:col-span-3 lg:row-span-2">
+          <Stack className="relative col-span-10 border border-orange-500 md:col-span-5 lg:col-span-3 lg:row-span-2">
             {/* Stack */}
-          </div>
+          </Stack>
           <Contact className="relative col-span-10 border border-green-500 md:col-span-5 lg:col-span-3 lg:row-span-2">
             {/* Contact */}
           </Contact>
