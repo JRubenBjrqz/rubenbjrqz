@@ -4,6 +4,7 @@ import { Contact } from '@/components/cards/contact/ContactCard'
 import { Container } from '@/components/ui/Container'
 import { Stack } from '@/components/cards/stack/StackCard'
 import { Projects } from '@/components/cards/projects/ProjectsCard'
+import { Learning } from '@/components/cards/learning/LearningCard'
 
 export default function Home() {
   return (
@@ -25,9 +26,9 @@ export default function Home() {
           <Projects className="relative col-span-10 border border-pink-500 md:col-span-5 lg:col-span-7 lg:row-span-2">
             {/* Projects */}
           </Projects>
-          <div className="relative col-span-10 border border-yellow-500 md:col-span-5 lg:col-span-3 lg:row-span-2">
+          <Learning className="relative col-span-10 border border-yellow-500 md:col-span-5 lg:col-span-3 lg:row-span-2">
             {/* Learning */}
-          </div>
+          </Learning>
         </div>
       </Container>
     </>
