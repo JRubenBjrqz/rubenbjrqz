@@ -1,44 +1,45 @@
-import { AnchorHTMLAttributes, ElementType, ReactNode } from 'react'
-
 export interface CardProps {
-    as?: ElementType
+    as?: React.ElementType
     className?: string
-    children: ReactNode
+    children: React.ReactNode
 }
 
-export interface CardLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface CardLinkProps {
     href: string
-    children: ReactNode
-}
-
-export interface CardPillProps {
-    icon: ElementType
-    className?: string
-    children: ReactNode
-}
-
-export interface CardTitleProps {
-    as?: ElementType
-    href?: string
-    key: string
     target?: string
     rel?: string
     className?: string
-    children: ReactNode
+    children: React.ReactNode
+}
+
+export interface CardPillProps {
+    icon: React.ElementType
+    className?: string
+    children: React.ReactNode
+}
+
+export interface CardTitleProps {
+    as?: React.ElementType
+    href?: string
+    key: string
+    target?: string | undefined
+    rel?: string
+    className?: string
+    children: React.ReactNode
 }
 
 export interface CardDescriptionProps {
     className?: string
-    children: ReactNode
+    children: React.ReactNode
 }
 
 export interface CardCTAProps {
-    children: ReactNode
+    children: React.ReactNode
 }
 
 export interface CardEyebrowProps {
-    as?: ElementType
+    as?: React.ElementType
     decorate: boolean
     className?: string
-    children: ReactNode
+    children: React.ReactNode
 }

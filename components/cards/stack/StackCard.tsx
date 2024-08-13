@@ -1,5 +1,5 @@
 import { Card } from '@/components/cards/Card'
-import { OrbitingCirclesDemo } from './StackOrbitingCircles'
+import { OrbitingCirclesDemo } from '@/components/cards/stack/StackOrbitingCircles'
 import { StackProps } from '@/interfaces'
 import { LiaToolsSolid } from 'react-icons/lia'
 

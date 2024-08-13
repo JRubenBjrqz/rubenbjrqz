@@ -1,8 +1,6 @@
-import { ElementType } from 'react'
-
 export interface SocialLinkDataProps {
     href: string
-    icon: ElementType
+    icon: React.ElementType
     label: string
 }
 
@@ -12,5 +10,5 @@ export interface SocialLinksProps {
     target?: string
     ariaLabel: string
     className?: string
-    icon: ElementType
+    icon: React.ElementType
 }

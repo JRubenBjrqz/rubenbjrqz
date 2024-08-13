@@ -1,7 +1,5 @@
-import { ElementType, ReactNode } from 'react';
-
 export interface PillProps {
-  icon: ElementType
+  icon: React.ElementType
   className?: string
-  children: ReactNode
+  children: React.ReactNode
 }
