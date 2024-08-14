@@ -7,8 +7,8 @@ import type { SocialLinksProps } from '@/interfaces'
 
 function SocialLink({ icon: Icon, ...props }: SocialLinksProps) {
   return (
-    <Link className="p-1 -m-1 group" {...props}>
-      <Icon className="w-6 h-6 transition fill-neutral-900 group-hover:fill-neutral-900 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+    <Link className="p-1" {...props}>
+      <Icon className="w-6 h-6 transition fill-black group-hover:fill-black" />
     </Link>
   )
 }

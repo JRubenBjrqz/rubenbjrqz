@@ -13,7 +13,7 @@ function CardLink({ children, ...props}: CardLinkProps) {
 
 function CardPill({ children, className = '', icon, ...props }: CardPillProps) {
     return (
-        <Pill icon={icon} className={`mb-3 ${className}`}>
+        <Pill icon={icon} className={`mb-1 ${className}`}>
             {children}
         </Pill>
     )
@@ -51,7 +51,7 @@ function CardCTA({ children }: CardCTAProps) {
     return (
         <div
             aria-hidden="true"
-            className="relative z-10 flex items-center text-sm font-medium text-indigo-600 dark:text-indigo-400"
+            className="relative z-10 flex items-center text-sm font-medium text-indigo-600"
         >
             {children}
         </div>
@@ -69,7 +69,7 @@ function CardEyebrow({ as: Component = 'p', children, className = '', decorate =
                     className="absolute inset-y-0 left-0 flex items-center"
                     aria-hidden="true"
                 >
-                    <span className="h-4 w-0.5 rounded-full bg-neutral-900 dark:bg-white" />
+                    <span className="h-4 w-0.5 rounded-full bg-neutral-900" />
                 </span>
             )}
                 {children}
@@ -80,7 +80,7 @@ function CardEyebrow({ as: Component = 'p', children, className = '', decorate =
 export function Card({ as: Component = 'div', children, className = '',  ...props }: CardProps) {
     return (
         <Component
-            className={`group relative flex flex-col items-start rounded-2xl box-gen p-4 shadow hover:shadow-lg overflow-hidden ${className}`}
+            className={`group relative flex flex-col items-start rounded-3xl bento-outline p-4 overflow-hidden ${className}`}
             {...props}
         >
             {children}

@@ -5,13 +5,14 @@ import { cva } from 'class-variance-authority'
 import type { AvatarProps } from '@/interfaces'
 
 const avatarVariants = cva(
-    'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
+    'rounded-full object-cover',
     {
         variants: {
             size: {
                 default: 'w-10',
                 sm: 'w-6',
                 lg: 'w-16',
+                xxl: 'w-44',
             },
         },
         defaultVariants: {
@@ -25,7 +26,7 @@ export function ImgAvatar({ className = '', size, ...props }: AvatarProps) {
         <Link
             href="/"
             aria-label="Home"
-            className={`block pointer-events-auto group rounded-full p-0.5 box-gen ${avatarVariants({ size, className })}`}
+            className={`rounded-full ${avatarVariants({ size, className })}`}
             {...props}
         >
             <Image

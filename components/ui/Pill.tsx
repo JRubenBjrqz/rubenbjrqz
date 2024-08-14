@@ -4,9 +4,9 @@ export function Pill({ children, className = '', icon }: PillProps) {
     const IconComponent = icon
     return (
       <div
-        className={`inline-flex items-center h-8 gap-1 px-4 text-sm leading-5 body-primary box-gen rounded-2xl line-clamp-2 ${className}`}
+        className={`inline-flex items-center gap-1 py-1.5 px-4 text-sm font-medium bento-outline rounded-full ${className}`}
       >
-        <IconComponent className="flex-none w-4 h-4" />
+        <IconComponent className="flex-none w-5 h-5" />
         <span>{children}</span>
       </div>
     );
