@@ -1,4 +1,4 @@
-import { LiaSpaSolid } from 'react-icons/lia'
+import { LiaHeadsetSolid } from 'react-icons/lia'
 import { Card } from '@/components/cards/Card'
 import type { AboutProps } from '@/interfaces'
 import { Avatar } from '@/components/ui/Avatar'
@@ -7,7 +7,7 @@ import { SocialLinks } from '@/components/ui/SocialLinks'
 export function About({ className = '' }: AboutProps) {
     return (
         <Card className={className}>
-            <Card.Pill icon={LiaSpaSolid}>About me</Card.Pill>
+            <Card.Pill icon={LiaHeadsetSolid}>About me</Card.Pill>
             <div className="mt-auto">
                 <div className="flex flex-col items-center mb-6">
                     <Avatar size="xxl"/>

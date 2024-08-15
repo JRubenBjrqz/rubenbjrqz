@@ -80,7 +80,7 @@ function CardEyebrow({ as: Component = 'p', children, className = '', decorate =
 export function Card({ as: Component = 'div', children, className = '',  ...props }: CardProps) {
     return (
         <Component
-            className={`group relative flex flex-col items-start rounded-3xl bento-outline p-4 overflow-hidden ${className}`}
+            className={`relative flex flex-col items-start rounded-3xl bento-outline p-4 overflow-hidden ${className}`}
             {...props}
         >
             {children}

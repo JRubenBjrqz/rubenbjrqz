@@ -15,21 +15,21 @@ function SocialLink({ icon: Icon, ...props }: SocialLinksProps) {
 
 export function SocialLinks({}) {
   return (
-    <div className="flex items-center justify-start gap-6 mt-6">
-      {socialLinks.map((link, index) => (
-        <div className="relative group" key={index}>
+    <div className="flex items-center justify-start gap-4 mt-5">
+      {socialLinks.map((social, index) => (
+        <div className="relative group hover:bg-black hover:rounded-full p-2" key={index}>
           <div className="transition-all translate-y-5 opacity-0 group-hover:translate-y-3 group-hover:opacity-100">
             <div className="relative flex items-center group">
-              <LiaExternalLinkAltSolid className="absolute w-4 h-4 transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100" />
+              <LiaExternalLinkAltSolid className="absolute w-4 h-4 transition-all group-hover:translate-x-1 fill-white" />
             </div>
           </div>
           <SocialLink
-            href={link.href}
+            href={social.href}
             rel="noopener noreferrer"
             target="_blank"
-            ariaLabel={link.label}
-            className="transition-all group-hover:opacity-20 group-hover:blur-sm sm:h-7 blur-0 grayscale-0"
-            icon={link.icon}
+            ariaLabel={social.label}
+            className="transition-all group-hover:opacity-0"
+            icon={social.icon}
           />
         </div>
       ))}
