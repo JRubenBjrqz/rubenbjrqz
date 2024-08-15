@@ -13,7 +13,7 @@ export const resume: ResumeDataProps[] = [
     },
     {
         index: 2,
-        company: 'Ludens',
+        company: 'Ludens Productions',
         position: 'Frontend Developer & UX/UI Designer',
         logo: logoLudens,
         startDate: '2021',
