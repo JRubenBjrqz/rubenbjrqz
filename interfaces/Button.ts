@@ -1,4 +1,3 @@
-// TODO: Change boxgen to bento
 export interface ButtonProps {
     className?: string
     children: React.ReactNode
