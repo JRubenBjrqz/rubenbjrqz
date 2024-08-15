@@ -17,9 +17,7 @@ export function JobItem({ job }: JobItemProps) {
                     {job.company}
                     <div
                         className="text-sm"
-                        aria-label={`${job.startDate} until ${
-                            job.endDate
-                        }`}
+                        aria-label={`${job.startDate} until ${job.endDate}`}
                     >
                         <time dateTime={job.startDate}>
                             {job.startDate}

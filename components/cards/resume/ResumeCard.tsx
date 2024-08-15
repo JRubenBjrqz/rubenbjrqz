@@ -16,7 +16,7 @@ export function Resume({ className = '' }: ResumeProps) {
             <div className="flex flex-row justify-between w-full gap-2">
                 <Button
                     href="https://read.cv/rubenbjrqz"
-                    btnStyle="boxgen"
+                    btnStyle="bento"
                     className="w-1/2"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export function Resume({ className = '' }: ResumeProps) {
                 </Button>
                 <Button
                     href="ruben_bojorquez_resume.pdf"
-                    btnStyle="boxgen"
+                    btnStyle="bento"
                     className="w-1/2"
                     target="_blank"
                 >
