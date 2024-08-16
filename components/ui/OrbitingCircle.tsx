@@ -1,7 +1,7 @@
-import type { OrbitingCirclesProps } from '@/interfaces'
+import type { OrbitingCircleProps } from '@/interfaces'
 import { cn } from '@/lib/utils'
 
-export default function OrbitingCircles({
+export default function OrbitingCircle({
   className = '',
   children,
   reverse,
@@ -9,7 +9,7 @@ export default function OrbitingCircles({
   delay = 10,
   radius = 50,
   path = true,
-}: OrbitingCirclesProps) {
+}: OrbitingCircleProps) {
   return (
     <>
       {path && (

@@ -8,7 +8,7 @@ export interface SocialLinksProps {
     href: string
     rel?: string
     target?: string
-    ariaLabel: string
+    'aria-label': string
     className?: string
     icon: React.ElementType
 }

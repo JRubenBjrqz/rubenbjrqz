@@ -27,7 +27,7 @@ export function SocialLinks({}) {
             href={social.href}
             rel="noopener noreferrer"
             target="_blank"
-            ariaLabel={social.label}
+            aria-label={social.label}
             className="transition-all group-hover:opacity-0"
             icon={social.icon}
           />

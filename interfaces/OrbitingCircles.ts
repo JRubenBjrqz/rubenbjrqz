@@ -1,4 +1,4 @@
-export interface OrbitingCirclesProps {
+export interface OrbitingCircleProps {
     className?: string
     children?: React.ReactNode
     reverse?: boolean
@@ -7,4 +7,6 @@ export interface OrbitingCirclesProps {
     radius?: number
     path?: boolean
 }
+
+export type OrbitingIconsProps = JSX.Element
   
