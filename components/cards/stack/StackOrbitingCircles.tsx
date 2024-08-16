@@ -8,15 +8,15 @@ export function OrbitingCirclesDemo() {
             Tools
         </span>
       {/* Inner Circles */}
-      {/* <OrbitingCircles
+      <OrbitingCircles
         className="size-[30px] border-none bg-transparent"
         duration={20}
         delay={20}
         radius={80}
       >
-        <Icons.whatsapp />
+        <Icons.adobeXD />
       </OrbitingCircles>
-      <OrbitingCircles
+      {/* <OrbitingCircles
         className="size-[30px] border-none bg-transparent"
         duration={20}
         delay={10}
