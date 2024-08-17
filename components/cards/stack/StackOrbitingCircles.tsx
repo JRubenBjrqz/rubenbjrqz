@@ -27,7 +27,7 @@ export function OrbitingCirclesDemo() {
         <OrbitingCircle
           key={index}
           className="size-[25px] border-none bg-transparent"
-          duration={getRandomDuration(20, 30)}
+          duration={getRandomDuration(15, 30)}
           delay={index * 10}
           radius={80 - index * 15}
           reverse={getRandomReverse()}

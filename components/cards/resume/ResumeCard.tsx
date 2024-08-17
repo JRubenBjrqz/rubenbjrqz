@@ -21,7 +21,7 @@ export function Resume({ className = '' }: ResumeProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <LiaIdCard className="w-4 h-4 transition stroke-zinc-600 dark:stroke-zinc-400 group-active:stroke-zinc-900 group-hover:stroke-zinc-900 dark:group-hover:stroke-zinc-100 dark:group-active:stroke-zinc-50" />
+                    <LiaIdCard className="w-4 h-4 transition stroke-zinc-600 group-active:stroke-zinc-900 group-hover:stroke-zinc-900" />
                     Read.cv
                 </Button>
                 <Button
@@ -30,7 +30,7 @@ export function Resume({ className = '' }: ResumeProps) {
                     className="w-1/2"
                     target="_blank"
                 >
-                    <LiaDownloadSolid className="w-4 h-4 transition stroke-zinc-600 dark:stroke-zinc-400 group-active:stroke-zinc-900 group-hover:stroke-zinc-900 dark:group-hover:stroke-zinc-100 dark:group-active:stroke-zinc-50" />
+                    <LiaDownloadSolid className="w-4 h-4 transition stroke-zinc-600 group-active:stroke-zinc-900 group-hover:stroke-zinc-900" />
                     Download Resume
                 </Button>
             </div>
