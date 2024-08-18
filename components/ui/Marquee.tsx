@@ -38,5 +38,5 @@ export default function Marquee({
           </div>
         ))}
     </div>
-  );
+  )
 }
