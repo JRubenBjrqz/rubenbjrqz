@@ -1,13 +1,13 @@
 import { Card } from '@/components/cards/Card'
 import { ProjectsProps } from '@/interfaces'
-import { LiaQuinscape } from 'react-icons/lia'
-import { MarqueeDemo } from '@/components/cards/projects/ProjectsMarquee'
+import { LiaTerminalSolid } from 'react-icons/lia'
+import { ProjectsMarquee } from '@/components/cards/projects/ProjectsMarquee'
 
 export function Projects({ className = '', ...props }: ProjectsProps) {
     return (
         <Card className={className}>
-            <Card.Pill icon={LiaQuinscape}>Projects</Card.Pill>
-            <MarqueeDemo />
+            <Card.Pill icon={LiaTerminalSolid}>Projects</Card.Pill>
+            <ProjectsMarquee />
         </Card>
     )
 }
