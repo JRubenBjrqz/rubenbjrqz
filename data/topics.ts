@@ -2,23 +2,18 @@ import type { TopicsDataProps } from "@/interfaces"
 
 export const Topics: TopicsDataProps[] = [
     {
-        name: "Payment received",
+        name: "Full Stack Open",
         description: "Magic UI",
         img: "💸",
     },
     {
-        name: "User signed up",
+        name: "Grokking Algorithms",
         description: "Magic UI",
         img: "👤",
     },
     {
-        name: "New message",
+        name: "Basic Korean",
         description: "Magic UI",
         img: "💬",
-    },
-    {
-        name: "New event",
-        description: "Magic UI",
-        img: "🗞️",
     },
 ]
