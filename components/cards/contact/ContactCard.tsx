@@ -9,7 +9,7 @@ export function Contact({ className = '', ...props }: ContactProps) {
             <Card.Pill icon={LiaComments} className="z-10 mb-3">
                 Contact me
             </Card.Pill>
-            <p className="my-2 text-sm body-secondary">
+            <p className="my-2 text-sm font-medium">
                 Available to work.
                 Let's talk about your project.
             </p>

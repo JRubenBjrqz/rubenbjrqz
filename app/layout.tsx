@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import '@fontsource-variable/fraunces'
 import '@fontsource/open-sauce-sans/400.css'
+import '@fontsource/open-sauce-sans/500.css'
 import '@fontsource/open-sauce-sans/600.css'
 
 export const metadata: Metadata = {

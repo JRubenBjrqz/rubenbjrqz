@@ -13,10 +13,12 @@ export function JobItem({ job }: JobItemProps) {
             />
             <div className="flex flex-col flex-wrap gap-x-2 w-full">
                 <span className="sr-only">Company and Date</span>
-                <div className="flex items-center justify-between w-full text-base font-semibold">
-                    {job.company}
+                <div className="flex items-center justify-between w-full">
+                    <h1 className="text-lg">
+                        {job.company}
+                    </h1>
                     <div
-                        className="text-sm"
+                        className="text-sm font-medium"
                         aria-label={`${job.startDate} until ${job.endDate}`}
                     >
                         <time dateTime={job.startDate}>

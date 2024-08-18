@@ -19,10 +19,10 @@ export function TopicItem({ topic }: TopicItemProps) {
           <span className="text-lg">{topic.img}</span>
         </div>
         <div className="flex flex-col overflow-hidden">
-          <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium">
-            <span className="text-sm">{topic.name}</span>
+          <figcaption className="flex flex-row items-center whitespace-pre text-lg">
+            <h5 className="text-sm">{topic.name}</h5>
           </figcaption>
-          <p className="text-xs font-normal">
+          <p className="text-xs">
             {topic.description}
           </p>
         </div>
