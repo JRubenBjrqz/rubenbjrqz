@@ -2,6 +2,7 @@ export interface TopicsDataProps {
     name: string
     description: string
     img: string
+    href: string
 }
 
 export interface TopicAnimatedListProps {

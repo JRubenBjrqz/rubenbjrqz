@@ -10,7 +10,7 @@ export function TopicAnimatedList({ className = '' }: TopicAnimatedListProps) {
   return (
     <div
       className={cn(
-        "relative flex h-[200px] w-full flex-col overflow-hidden rounded-lg",
+        "relative flex h-[150px] w-full flex-col overflow-hidden rounded-lg mt-2",
         className,
       )}
     >

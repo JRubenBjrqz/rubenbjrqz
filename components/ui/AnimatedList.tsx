@@ -22,7 +22,7 @@ export function AnimatedList({ className, children, delay = 3000 }: AnimatedList
   )
 
   return (
-    <div className={`flex flex-col items-center gap-4 ${className}`}>
+    <div className={`flex flex-col items-center gap-3 ${className}`}>
       <AnimatePresence>
         {itemsToShow.map((item) => (
           <AnimatedListItem key={(item as ReactElement).key}>
