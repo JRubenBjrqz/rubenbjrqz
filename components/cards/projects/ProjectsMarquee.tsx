@@ -1,13 +1,13 @@
 import Marquee from '@/components/ui/Marquee'
 import { projects } from '@/data/projects'
-import { MarqueeCard } from '@/components/ui/MarqueeCard'
+import { ProjectsMarqueeCard } from '@/components/cards/projects/ProjectsMarqueeCard'
 
 export function ProjectsMarquee() {
   return (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg">
       <Marquee reverse pauseOnHover className="[--duration:20s]">
           {projects.map((project, index) => (
-            <MarqueeCard 
+            <ProjectsMarqueeCard 
               key={index}
               index={index}
               project={project}
