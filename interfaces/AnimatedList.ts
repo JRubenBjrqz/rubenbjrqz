@@ -5,9 +5,5 @@ export interface AnimatedListProps {
 }
 
 export interface AnimatedListItemProps {
-    name: string
-    description: string
-    icon: string
-    color: string
-    time: string
+    children: React.ReactNode
 }
