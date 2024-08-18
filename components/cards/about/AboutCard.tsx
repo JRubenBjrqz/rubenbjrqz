@@ -14,8 +14,8 @@ export function About({ className = '' }: AboutProps) {
                     <SocialLinks />
                 </div>
                 <div className="text-center">
-                    <h1 className="text-3xl font-semibold mb-2">Rubén Bojórquez</h1>
-                    <p className="text-[15px] font-light">
+                    <h1 className="text-3xl mb-4">Rubén Bojórquez</h1>
+                    <p className="text-sm leading-6">
                         I'm Frontend Developer with experience as UX/UI Designer. 
                         Currently working at Sofía XT. Based in Hermosillo, Mexico.
                     </p>

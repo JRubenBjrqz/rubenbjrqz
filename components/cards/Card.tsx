@@ -22,7 +22,7 @@ function CardPill({ children, className = '', icon, ...props }: CardPillProps) {
 function CardTitle({ as: Component = 'h2', children, className = '', href, target, rel, ...props }: CardTitleProps) {
     return (
         <Component
-            className={`text-base font-semibold tracking-tight body-primary ${className}`}
+            className={`text-base font-semibold tracking-tight ${className}`}
             {...props}
         >
             {href ? (

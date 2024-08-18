@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/fraunces':
+        specifier: ^5.0.22
+        version: 5.0.22
+      '@fontsource/open-sauce-sans':
+        specifier: ^5.0.11
+        version: 5.0.11
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -81,6 +87,12 @@ packages:
   '@eslint/js@8.57.0':
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@fontsource-variable/fraunces@5.0.22':
+    resolution: {integrity: sha512-Ukf/NERSy1vPAMDc0Myp9PDBsEXllF/mbZa0DJPlVfNXH4OZHhh9k7UUY6Y0gu7Qg3oks7w2Si02Nh1oldwrfg==}
+
+  '@fontsource/open-sauce-sans@5.0.11':
+    resolution: {integrity: sha512-33DsO6cGlm4698Mi9OUA7tNqY5HE7Gv/jgoj/kIH1ka2ZtsxODiDsR7YWqyHWPVXd29enkAqW2KRnixzPcuv5g==}
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -1589,6 +1601,10 @@ snapshots:
       - supports-color
 
   '@eslint/js@8.57.0': {}
+
+  '@fontsource-variable/fraunces@5.0.22': {}
+
+  '@fontsource/open-sauce-sans@5.0.11': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
