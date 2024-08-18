@@ -31,7 +31,7 @@
 
 @layer components {
   .bento-outline {
-    @apply outline outline-1 outline-offset-0 outline-black;
+    @apply outline outline-2 outline-offset-0 outline-black;
   }
 }
 
