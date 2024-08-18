@@ -1,6 +1,6 @@
 import OrbitingCircle from '@/components/ui/OrbitingCircle'
 import { Icons } from '@/components/ui/Icons'
-import type { OrbitingIconsProps } from '@/interfaces'
+import type { OrbitingIconsProps, StackOrbitingCircles  } from '@/interfaces'
 
 const iconList: OrbitingIconsProps[] = Object.values(Icons).map((IconComponent, index) => (
   <IconComponent key={index} />
@@ -19,10 +19,10 @@ const getRandomReverse = () => {
   return Math.random() > 0.5
 }
 
-export function OrbitingCirclesDemo() {
+export function StackOrbitingCircles({ className = '' }: StackOrbitingCircles) {
   const randomIcons = getRandomIcons(iconList, 5)
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden">
+    <div className={`relative flex h-full w-full flex-col items-center justify-center overflow-hidden ${className}`}>
       {randomIcons.map((icon, index) => (
         <OrbitingCircle
           key={index}

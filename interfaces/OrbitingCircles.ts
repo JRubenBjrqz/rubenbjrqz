@@ -7,6 +7,4 @@ export interface OrbitingCircleProps {
     radius?: number
     path?: boolean
 }
-
-export type OrbitingIconsProps = JSX.Element
   

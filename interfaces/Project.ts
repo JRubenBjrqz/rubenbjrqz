@@ -8,3 +8,7 @@ export interface ProjectsDataProps {
 export interface ProjectsProps {
     className?: string
 }
+
+export interface ProjectsMarqueeProps {
+    className?: string
+}

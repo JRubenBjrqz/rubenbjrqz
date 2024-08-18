@@ -1,10 +1,11 @@
 import Marquee from '@/components/ui/Marquee'
 import { projects } from '@/data/projects'
 import { ProjectsMarqueeCard } from '@/components/cards/projects/ProjectsMarqueeCard'
+import type { ProjectsMarqueeProps } from '@/interfaces'
 
-export function ProjectsMarquee() {
+export function ProjectsMarquee({ className = '' }: ProjectsMarqueeProps) {
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg">
+    <div className={`relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg ${className}`}>
       <Marquee reverse pauseOnHover className="[--duration:20s]">
           {projects.map((project, index) => (
             <ProjectsMarqueeCard 
