@@ -31,7 +31,7 @@ export function Resume({ className = '' }: ResumeProps) {
                     target="_blank"
                 >
                     <LiaDownloadSolid className="w-4 h-4 transition stroke-zinc-600 group-active:stroke-zinc-900 group-hover:stroke-zinc-900" />
-                    Download Resume
+                    Resume
                 </Button>
             </div>
         </Card>
