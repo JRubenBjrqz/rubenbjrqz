@@ -10,7 +10,7 @@ export function About({ className = '' }: AboutProps) {
             <Card.Pill icon={LiaHeadsetSolid}>About me</Card.Pill>
             <div className="mt-auto">
                 <div className="flex flex-col items-center mb-6">
-                    <Avatar size="xxl" className="mt-3 sm:mt-0"/>
+                    <Avatar size="xxl" className="mt-3 lg:mt-0"/>
                     <SocialLinks />
                 </div>
                 <div className="text-center">

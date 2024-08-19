@@ -11,7 +11,7 @@ export function Projects({ className = '', ...props }: ProjectsProps) {
             <ProjectsMarquee className="[mask-image:linear-gradient(to_top,transparent_15%,#000_100%)]" />
             <figure
                 className={cn(
-                "absolute bottom-0 left-0 w-2/5 cursor-pointer overflow-hidden rounded-xl p-4",
+                "absolute bottom-0 left-0 lg:w-2/5 cursor-pointer overflow-hidden rounded-xl p-4",
                 )}
             >
                 <div className="flex flex-row items-center gap-2">

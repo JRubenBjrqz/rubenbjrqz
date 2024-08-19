@@ -23,10 +23,10 @@ export const Icons = {
             <path fill="#fff" d="M91.555 55.826h3.891c3.107 0 4.186.682 4.552 1.089.61.674.724 2.097.333 4.112-.44 2.257-1.254 3.858-2.421 4.756-1.195.92-3.139 1.386-5.773 1.386h-2.786l2.204-11.342zm6.674-8.1H84.096a1.39 1.39 0 0 0-1.363 1.123l-6.558 33.739a1.39 1.39 0 0 0 1.364 1.653h7.35a1.39 1.39 0 0 0 1.363-1.124l1.525-7.846h5.15c2.911 0 5.364-.318 7.286-.944 1.978-.642 3.797-1.731 5.408-3.238a16.52 16.52 0 0 0 3.258-4.086c.832-1.487 1.428-3.147 1.775-4.931.86-4.423.162-7.964-2.076-10.524-2.216-2.537-5.697-3.823-10.35-3.823zM87.666 68.557h4.47c2.964 0 5.17-.557 6.622-1.675 1.45-1.116 2.428-2.98 2.936-5.591.487-2.508.266-4.277-.665-5.308-.93-1.03-2.791-1.546-5.583-1.546h-5.035Zm10.563-19.445c4.251 0 7.354 1.117 9.303 3.348 1.95 2.232 2.537 5.347 1.759 9.346-.32 1.648-.862 3.154-1.624 4.518-.763 1.366-1.76 2.614-2.992 3.747-1.467 1.373-3.097 2.352-4.892 2.935-1.793.584-4.078.875-6.856.875h-6.295l-1.745 8.97h-7.35l6.558-33.739h14.133"/>
             <defs>
                 <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(84.04136 0 0 84.04136 38.426 42.169)" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#AEB2D5"/>
-                    <stop offset=".3" stop-color="#AEB2D5"/>
-                    <stop offset=".75" stop-color="#484C89"/>
-                    <stop offset="1" stop-color="#484C89"/>
+                    <stop stopColor="#AEB2D5"/>
+                    <stop offset=".3" stopColor="#AEB2D5"/>
+                    <stop offset=".75" stopColor="#484C89"/>
+                    <stop offset="1" stopColor="#484C89"/>
                 </radialGradient>
             </defs>
         </svg>
@@ -91,12 +91,12 @@ export const Icons = {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
             <defs>
                 <linearGradient id="a" x1="76.079" x2="523.48" y1="10.798" y2="365.95" gradientTransform="translate(1.11 14.613) scale(.24566)" gradientUnits="userSpaceOnUse">
-                    <stop offset="0" stop-color="#9013fe"/>
-                    <stop offset="1" stop-color="#6610f2"/>
+                    <stop offset="0" stopColor="#9013fe"/>
+                    <stop offset="1" stopColor="#6610f2"/>
                 </linearGradient>
                 <linearGradient id="b" x1="193.51" x2="293.51" y1="109.74" y2="278.87" gradientTransform="translate(0 52)" gradientUnits="userSpaceOnUse">
-                    <stop offset="0" stop-color="#fff"/>
-                    <stop offset="1" stop-color="#f1e5fc"/>
+                    <stop offset="0" stopColor="#fff"/>
+                    <stop offset="1" stopColor="#f1e5fc"/>
                 </linearGradient>
                 <filter id="c" width="197" height="249" x="161.9" y="135.46" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
                     <feFlood flood-opacity="0" result="BackgroundImageFix"/>

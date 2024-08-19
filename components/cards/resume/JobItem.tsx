@@ -13,7 +13,7 @@ export function JobItem({ job }: JobItemProps) {
             />
             <div className="flex flex-col flex-wrap gap-x-2 w-full">
                 <span className="sr-only">Company and Date</span>
-                <div className="lg:flex lg:items-center lg:justify-between w-full">
+                <div className="md:flex md:items-center md:justify-between w-full">
                     <h1 className="text-lg">
                         {job.company}
                     </h1>
