@@ -5,7 +5,7 @@ import { cva } from 'class-variance-authority'
 import type { AvatarProps } from '@/interfaces'
 
 const avatarVariants = cva(
-    'rounded-full object-cover',
+    'object-cover',
     {
         variants: {
             size: {
@@ -13,6 +13,7 @@ const avatarVariants = cva(
                 sm: 'w-6',
                 lg: 'w-16',
                 xxl: 'w-44',
+                about: 'max-w-96'
             },
         },
         defaultVariants: {
@@ -24,16 +25,16 @@ const avatarVariants = cva(
 export function ImgAvatar({ className = '', size, ...props }: AvatarProps) {
     return (
         <Link
-            href="/"
-            aria-label="Home"
-            className={`rounded-full ${avatarVariants({ size, className })}`}
+            href="/about"
+            aria-label="About"
+            className={avatarVariants({ size, className })}
             {...props}
         >
             <Image
                 src={avatarImage}
-                alt="Avatar Rubén Bojórquez"
+                alt="Rubén Bojórquez"
                 placeholder="blur"
-                className={avatarVariants({ size, className })}
+                className={`rounded-full ${avatarVariants({ size, className })}`}
                 priority
             />
         </Link>
@@ -45,29 +46,23 @@ export function ImgAvatarNav({ className = '', size, ...props }: AvatarProps) {
         <div className="group">
             <Image
                 src={avatarImage}
-                alt="Avatar Rubén Bojórquez"
+                alt="Rubén Bojórquez"
                 placeholder="blur"
-                className={avatarVariants({ size, className })}
+                className={`rounded-full ${avatarVariants({ size, className })}`}
                 priority
             />
         </div>
     )
 }
 
-export function Avatar({ className, size, nav, ...props }: AvatarProps) {
+export function ImgAvatarAbout({ className = '', size, ...props }: AvatarProps) {
     return (
-        <>
-            {nav ? (
-                <ImgAvatarNav
-                    className={avatarVariants({ size, className })}
-                    {...props}
-                />
-                ) : (
-                <ImgAvatar
-                    className={avatarVariants({ size, className })}
-                    {...props}
-                />
-            )}
-        </>
+        <Image
+            src={avatarImage}
+            alt="Rubén Bojórquez"
+            placeholder="blur"
+            className={`rounded-2xl ${avatarVariants({ size, className })}`}
+            priority
+        />
     )
 }

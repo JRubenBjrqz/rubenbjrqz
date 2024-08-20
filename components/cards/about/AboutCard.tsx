@@ -1,7 +1,7 @@
 import { LiaHeadsetSolid } from 'react-icons/lia'
 import { Card } from '@/components/cards/Card'
 import type { AboutProps } from '@/interfaces'
-import { Avatar } from '@/components/ui/Avatar'
+import { ImgAvatar } from '@/components/ui/Avatar'
 import { SocialLinks } from '@/components/ui/SocialLinks'
 
 export function About({ className = '' }: AboutProps) {
@@ -10,7 +10,7 @@ export function About({ className = '' }: AboutProps) {
             <Card.Pill icon={LiaHeadsetSolid}>About me</Card.Pill>
             <div className="mt-auto">
                 <div className="flex flex-col items-center mb-6">
-                    <Avatar size="xxl" className="mt-3 lg:mt-0"/>
+                    <ImgAvatar size="xxl" className="mt-3 lg:mt-0"/>
                     <SocialLinks />
                 </div>
                 <div className="text-center">
