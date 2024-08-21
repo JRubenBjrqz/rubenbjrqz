@@ -1,4 +1,3 @@
-import Balancer from 'react-wrap-balancer'
 import { Container } from '@/components/ui/Container'
 import { ImgAvatarAbout } from '@/components/ui/Avatar'
 
@@ -6,17 +5,15 @@ export default function About() {
     return (
         <>
             <Container>
-                <div className="p-5 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-                    <div className="px-2.5 mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-12">
+                    <div className="mx-auto">
                         <ImgAvatarAbout size="about"/>
                     </div>
-                    <div className="lg:order-first lg:row-span-2">
-                        <h1>
-                            <Balancer>
-                                Rubén Bojórquez. Lorem ipsum dolor sit amet, consectetur.
-                            </Balancer>
+                    <div className="mt-10 lg:mt-0 lg:order-first lg:row-span-2">
+                        <h1 className="text-4xl text-pretty">
+                            Rubén Bojórquez. Lorem ipsum dolor sit amet, consectetur.
                         </h1>
-                        <div className="mt-6 text-base space-y-7">
+                        <div className="mt-6 text-base space-y-6">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam 
                                 ultrices tortor nunc, quis maximus neque imperdiet quis. 

@@ -14,7 +14,7 @@ function InnerContainer({ children, className = '', ...props }: ContainerProps) 
         className={`relative h-full sm:px-8 lg:px-12 ${className}`}
         {...props}
       >
-        <div className="max-w-full mx-auto">{children}</div>
+        <div className="max-w-full mx-auto p-5">{children}</div>
       </div>
     )
 }
