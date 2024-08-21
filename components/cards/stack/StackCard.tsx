@@ -9,6 +9,7 @@ export function Stack({ className = '', ...props }: StackProps) {
         <Card className={className}>
             <Card.Pill icon={LiaLaptopCodeSolid}>Stack</Card.Pill>
             <StackOrbitingCircles className="[mask-image:linear-gradient(to_top,transparent_15%,#000_100%)]"/>
+            {/* TODO: Create an ui component */}
             <figure
                 className={cn(
                 "absolute bottom-0 left-0 cursor-pointer overflow-hidden rounded-xl p-4",

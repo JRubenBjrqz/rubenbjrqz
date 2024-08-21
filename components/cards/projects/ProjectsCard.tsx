@@ -9,6 +9,7 @@ export function Projects({ className = '', ...props }: ProjectsProps) {
         <Card className={`px-0 ${className}`}>
             <Card.Pill icon={LiaTerminalSolid} className='ml-4'>Projects</Card.Pill>
             <ProjectsMarquee className="[mask-image:linear-gradient(to_top,transparent_15%,#000_100%)]" />
+            {/* TODO: Create an ui component */}
             <figure
                 className={cn(
                 "absolute bottom-0 left-0 lg:w-2/5 cursor-pointer overflow-hidden rounded-xl p-4",
