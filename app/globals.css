@@ -33,12 +33,20 @@
   .bento-outline {
     @apply outline outline-2 outline-offset-0 outline-black;
   }
+
+  .btn-bento {
+    @apply outline-2 outline-offset-0 outline-black;
+    transition: outline-color 0s, translate 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .btn-bento:hover {
+    @apply outline outline-black translate-y-[-6px] shadow-[6px_6px_0_0_#000];
+  }
 }
 
 @layer utilities {
   .bento-shadow {
-    @apply duration-500 hover:translate-y-[-6px] hover:shadow-[6px_6px_0_0_#000];
-    box-shadow: 8px 8px 0ch 0 #000;
+    @apply duration-500 hover:translate-y-[-6px] hover:shadow-[8px_8px_0_0_#000];
   }
 
   .shadow-button-light {

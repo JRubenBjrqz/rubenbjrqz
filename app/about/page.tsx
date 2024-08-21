@@ -1,5 +1,8 @@
 import { Container } from '@/components/ui/Container'
 import { ImgAvatarAbout } from '@/components/ui/Avatar'
+import { GridSocialLinks } from '@/components/ui/SocialLinks'
+
+// TODO: Go back btn
 
 export default function About() {
     return (
@@ -30,6 +33,7 @@ export default function About() {
                             </p>
                         </div>
                     </div>
+                    <GridSocialLinks/>
                 </div>
             </Container>
         </>

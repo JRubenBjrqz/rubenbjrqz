@@ -61,7 +61,7 @@ export function ImgAvatarAbout({ className = '', size, ...props }: AvatarProps) 
             src={avatarImage}
             alt="Rubén Bojórquez"
             placeholder="blur"
-            className={`rounded-2xl ${avatarVariants({ size, className })}`}
+            className={`rounded-3xl ${avatarVariants({ size, className })}`}
             priority
         />
     )

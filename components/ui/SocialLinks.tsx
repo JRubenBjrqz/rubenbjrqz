@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { socialLinks } from '@/data/links'
 import { LiaExternalLinkAltSolid } from 'react-icons/lia'
-import type { SocialLinksProps } from '@/interfaces'
+import type { SocialLinksProps, TextSocialLinksProps } from '@/interfaces'
 
 function SocialLink({ icon: Icon, ...props }: SocialLinksProps) {
   return (
@@ -37,51 +37,44 @@ export function SocialLinks({}) {
   )
 }
 
-// export function LinkText({ className, href, children, icon: Icon, outline }) {
-//   return (
-//     <li className={cn(className, 'flex')}>
-//       <Link href={href} rel="noopener noreferrer" target="_blank">
-//         <div className="relative group">
-//           <div className="absolute z-10 flex items-center justify-center w-full h-full transition-all translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
-//             <p className="font-semibold cursor-pointer body-primary">
-//               {children}
-//             </p>
-//             <div className="relative flex items-center group">
-//               <ArrowUpRight className="absolute w-4 h-4 transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100" />
-//             </div>
-//           </div>
-//           <div className="flex text-sm font-medium transition-all group body-secondary group-hover:opacity-20 group-hover:blur-sm sm:h-7 blur-0 grayscale-0">
-//             {outline ? (
-//               <Icon className="w-6 h-6 stroke-[1.5px] transition text-neutral-700 group-hover:body-secondary dark:group-hover:text-outline-300 outline-zinc-600 group-hover:outline-zinc-600 dark:outline-zinc-400 dark:group-hover:text-zinc-300 dark:stroke-zinc-400" />
-//             ) : (
-//               <Icon className="flex-none w-6 h-6 transition fill-zinc-600 group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
-//             )}
-//             <span className="ml-4 group-hover:text-neutral-700 dark:group-hover:text-zinc-300">
-//               {children}
-//             </span>
-//           </div>
-//         </div>
-//       </Link>
-//     </li>
-//   )
-// }
+// Queria usar de ejemplo las fotos de google maps y el ejemplo era yo
 
-// export function SocialText({}) {
-//   return (
-//     <div className="lg:pl-28 ">
-//       <ul role="list" className="grid grid-cols-2">
-//         {linksSocial.map((link, index) => (
-//           <LinkText
-//             href={link.href}
-//             icon={link.icon}
-//             className="mt-4"
-//             key={index}
-//             outline={link.outline}
-//           >
-//             {link.label}
-//           </LinkText>
-//         ))}
-//       </ul>
-//     </div>
-//   )
-// }
+export function TextSocialLink({ className = '', href, children, icon: Icon }: TextSocialLinksProps) {
+  return (
+    <li className={`flex w-full rounded-xl btn-bento  ${className}`}>
+      <Link 
+        href={href} 
+        rel="noopener noreferrer" 
+        target="_blank"
+        className="mx-auto"
+      >
+        <div className="relative group">
+          <div className="flex text-base w-full p-4 space-x-1.5 transition-all group">
+            <Icon className="w-6 h-6 transition fill-black group-hover:fill-black"/>
+            <span>
+              {children}
+            </span>
+          </div>
+        </div>
+      </Link>
+    </li>
+  )
+}
+
+export function GridSocialLinks({}) {
+  return (
+    <div className="mx-auto">
+      <ul role="list" className="grid grid-cols-2 gap-x-10 gap-y-5">
+        {socialLinks.map((link, index) => (
+          <TextSocialLink
+            href={link.href}
+            icon={link.icon}
+            key={index}
+          >
+            {link.label}
+          </TextSocialLink>
+        ))}
+      </ul>
+    </div>
+  )
+}

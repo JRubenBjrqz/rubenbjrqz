@@ -12,3 +12,10 @@ export interface SocialLinksProps {
     className?: string
     icon: React.ElementType
 }
+
+export interface TextSocialLinksProps {
+    className?: string
+    href: string
+    children: React.ReactNode
+    icon: React.ElementType
+}
