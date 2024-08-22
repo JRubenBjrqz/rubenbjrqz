@@ -3,6 +3,14 @@ import { ImgAvatarAbout } from '@/components/ui/Avatar'
 import { GridSocialLinks } from '@/components/ui/SocialLinks'
 
 // TODO: Go back btn
+// TODO: Change metadata
+export const metadata = {
+    title: 'About me',
+    description: 'Rubén Bojórquez',
+    keywords: [
+        'frontend',
+    ],
+}
 
 export default function About() {
     return (

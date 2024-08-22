@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://jrubenbjrqzo.web.app'),
   title: {
     default: 'Rubén Bojórquez - Frontend Developer',
-    template: 'Rubén Bojórquez'
+    template: '%s'
   },
   description: 'Frontend Developer',
   keywords: [
