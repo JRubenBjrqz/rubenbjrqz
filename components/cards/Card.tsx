@@ -1,6 +1,8 @@
 import Link from 'next/link'
-import type { CardProps, CardLinkProps, CardPillProps, CardTitleProps, CardDescriptionProps, CardCTAProps, CardEyebrowProps } from '@/interfaces'
+import type { CardProps, CardLinkProps, CardPillProps, CardTitleProps, CardDescriptionProps, CardCTAProps, CardEyebrowProps, CardMaskProps } from '@/interfaces'
 import { Pill } from '@/components/ui/Pill'
+import { Button } from '@/components/ui/Button'
+import { LiaArrowRightSolid } from 'react-icons/lia'
 
 function CardLink({ children, ...props}: CardLinkProps) {
     return (
@@ -77,6 +79,33 @@ function CardEyebrow({ as: Component = 'p', children, className = '', decorate =
     )
 }
 
+export function CardMask({ title, description, href, btnText }: CardMaskProps) {
+    return (
+        <div className="absolute bottom-0 left-0 flex flex-col justify-between w-full p-4">
+            <div className="z-10 flex transform-gpu flex-col gap-1 transition-all duration-300 group-hover:-translate-y-10">
+                <h3 className="text-2xl font-semibold text-black">
+                    {title}
+                </h3>
+                <p className="text-sm text-black">
+                    {description}
+                </p>
+            </div>
+            <div 
+                className="absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center py-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+            >
+                <Button
+                    href={href}
+                    btnStyle="bento"
+                    className="w-3/4"
+                >
+                    {btnText}
+                    <LiaArrowRightSolid className="w-4 h-4 transition stroke-zinc-600 group-active:stroke-zinc-900 group-hover:stroke-zinc-900" />
+                </Button>
+            </div>
+    </div>
+    )
+}
+
 export function Card({ as: Component = 'div', children, className = '',  ...props }: CardProps) {
     return (
         <Component
@@ -94,3 +123,4 @@ Card.Title = CardTitle
 Card.Description = CardDescription
 Card.CTA = CardCTA
 Card.Eyebrow = CardEyebrow
+Card.Mask = CardMask

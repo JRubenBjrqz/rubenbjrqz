@@ -24,8 +24,7 @@ const buttonVariants = cva(
 })
 
 export function Button({ className = '', btnStyle, href, ...props }: ButtonProps) {
-    className = `inline-flex items-center gap-2 justify-center overflow-hidden rounded-lg text-sm
-                ${buttonVariants({ btnStyle, className })}`
+    className = `inline-flex items-center gap-2 justify-center overflow-hidden rounded-lg text-sm ${buttonVariants({ btnStyle, className })}`
     return href ? (
         <Link href={href} className={className} {...props} />
     ) : (

@@ -6,27 +6,15 @@ import { ProjectsMarquee } from '@/components/cards/projects/ProjectsMarquee'
 
 export function Projects({ className = '', ...props }: ProjectsProps) {
     return (
-        <Card className={`px-0 ${className}`}>
+        <Card className={`group px-0 ${className}`}>
             <Card.Pill icon={LiaTerminalSolid} className='ml-4'>Projects</Card.Pill>
-            <ProjectsMarquee className="[mask-image:linear-gradient(to_top,transparent_15%,#000_100%)]" />
-            {/* TODO: Create an ui component */}
-            <figure
-                className={cn(
-                "absolute bottom-0 left-0 lg:w-2/5 cursor-pointer overflow-hidden rounded-xl p-4",
-                )}
-            >
-                <div className="flex flex-row items-center gap-2">
-                <div className="flex flex-col">
-                    <h1 className="text-2xl">
-                        What I do
-                    </h1>
-                </div>
-                </div>
-                <blockquote className="mt-2 text-sm">
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit.
-                </blockquote>
-            </figure>
+            <ProjectsMarquee className="card-mask" />
+            <Card.Mask 
+                title="What I do"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                href="/projects"
+                btnText="View Projects"
+            />
         </Card>
     )
 }

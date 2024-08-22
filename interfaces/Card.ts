@@ -43,3 +43,10 @@ export interface CardEyebrowProps {
     className?: string
     children: React.ReactNode
 }
+
+export interface CardMaskProps {
+    title: string
+    description: string
+    href: string
+    btnText: string
+}

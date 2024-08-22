@@ -49,6 +49,10 @@
     @apply duration-500 hover:translate-y-[-6px] hover:shadow-[8px_8px_0_0_#000];
   }
 
+  .card-mask {
+    @apply [mask-image:linear-gradient(to_top,transparent_15%,#000_100%)]
+  }
+
   .shadow-button-light {
     box-shadow: 0 0 #0000, 0 0 #0000, inset 0px 1px 0px 0px #fff,
       0px 0px 0px 1px rgba(0, 0, 0, 0.06), 0px 1px 0px 0px rgba(0, 0, 0, 0.08),
