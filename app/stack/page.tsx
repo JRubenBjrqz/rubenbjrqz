@@ -1,4 +1,5 @@
 import { SimpleLayout } from "@/components/ui/SimpleLayout"
+import { TechnicalSkills } from "@/components/skills/TechnicalSkills"
 
 export const metadata = {
     title: 'Stack',
@@ -14,7 +15,7 @@ export default function Stack() {
             title="Lorem ipsum dolor sit amet, consectetur."
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices tortor nunc, quis maximus neque imperdiet quis. Praesent congue bibendum felis sodales egestas. "
         >
-            Hello World
+            <TechnicalSkills />
         </SimpleLayout>
     )
 }
