@@ -2,8 +2,8 @@ import OrbitingCircle from '@/components/ui/OrbitingCircle'
 import { Icons } from '@/components/ui/Icons'
 import type { OrbitingIconsProps, StackOrbitingCircles  } from '@/interfaces'
 
-const iconList: OrbitingIconsProps[] = Object.values(Icons).map((IconComponent, index) => (
-  <IconComponent key={index} />
+const iconList: OrbitingIconsProps[] = Object.values(Icons).map((icon, index) => (
+  <icon.svg key={index} />
 ))
 
 const getRandomIcons = (iconList: OrbitingIconsProps[], count: number): OrbitingIconsProps[] => {
