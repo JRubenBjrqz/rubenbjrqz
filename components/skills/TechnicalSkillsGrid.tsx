@@ -1,28 +1,13 @@
-import { cva } from 'class-variance-authority'
-import { cn } from '@/lib/utils'
 import { TechnicalSkillsGridProps } from '@/interfaces'
 
-const gridVariants = cva(
-  'grid grid-cols-3 mt-5 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 xl:gap-x-8',
-  {
-    variants: {
-      size: {
-        default: 'lg:grid-cols-5 grid-cols-2',
-        two: 'lg:grid-cols-2 grid-cols-2',
-        three: 'lg:grid-cols-3 grid-cols-2',
-      },
-    },
-    defaultVariants: {
-      size: 'default',
-    },
-  }
-)
-
-export function TechnicalSkillsGrid({ className = '', children, title, size }: TechnicalSkillsGridProps) {
+export function TechnicalSkillsGrid({ className = '', children, title }: TechnicalSkillsGridProps) {
   return (
     <section>
-      <h2 className="tex font-semibold body-primary">{title}</h2>
-      <ul role="list" className={cn(gridVariants({ size, className }))}>
+      <h2 className="text-xl font-semibold">{title}</h2>
+      <ul 
+        role="list" 
+        className={`grid grid-cols-1 mt-6 gap-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ${className}`}
+      >
         {children}
       </ul>
     </section>

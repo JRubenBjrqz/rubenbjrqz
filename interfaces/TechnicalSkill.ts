@@ -8,6 +8,5 @@ export interface TechnicalSkillIconProps {
 export interface TechnicalSkillsGridProps {
     className?: string
     title: string
-    size: 'default' | 'two' | 'three'
     children: React.ReactNode
 }

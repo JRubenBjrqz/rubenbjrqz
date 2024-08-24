@@ -2,7 +2,7 @@ import type { IconProps } from '@/interfaces'
 
 export const Icons: Record<string, IconProps> = {
     javaScript: {
-        title: 'Javascript',
+        title: 'JavaScript',
         type: 'Language',
         svg: () => (
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">

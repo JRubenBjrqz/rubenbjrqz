@@ -37,12 +37,11 @@ export function TechnicalSkills() {
   
     return (
       <>
-        <div className="relative z-20 flex items-center justify-start gap-4 py-2 my-16 rounded-full w-fit box-gen">
+        <div className="my-16 w-full">
           <div className="space-y-20">
             {Object.entries(technicalSkillsCategories).map(([category, stack]) => (
               <TechnicalSkillsGrid
                 title={category}
-                size="three"
                 key={category}
               >
                 {stack.map((skill, index) => (
