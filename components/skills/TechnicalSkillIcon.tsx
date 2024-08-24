@@ -13,7 +13,7 @@ export function TechnicalSkillIcon({ title, svg: Svg, index }: TechnicalSkillIco
                 <Svg/>
             </div>
             <p className="font-semibold">
-            {title}
+                {title}
             </p>
         </Card>
     )
