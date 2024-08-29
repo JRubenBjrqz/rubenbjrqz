@@ -1,6 +1,6 @@
 import type { TopicsDataProps } from '@/interfaces'
 
-export const Topics: TopicsDataProps[] = [
+export const topics: TopicsDataProps[] = [
     {
         name: "Full Stack Open",
         description: "Magic UI",
