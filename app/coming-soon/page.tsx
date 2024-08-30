@@ -9,7 +9,7 @@ export default function ComingSoon() {
                     <h1 className="text-5xl uppercase">Coming Soon</h1>
                     <h3 className="text-xl font-medium">Website Under Construction</h3>
                 </div>
-                <p className="text-base">I'm working on my portfolio, and I can't wait to share it with you. Please check back soon!</p>
+                <p className="text-base">I&apos;m working on my portfolio, and I can&apos;t wait to share it with you. Please check back soon!</p>
                 <Button
                     btnStyle="bento"
                     className="w-1/2 py-3 mt-5"

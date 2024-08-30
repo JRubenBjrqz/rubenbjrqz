@@ -11,7 +11,7 @@ export function Contact({ className = '', ...props }: ContactProps) {
             </Card.Pill>
             <p className="my-2 text-sm font-medium">
                 Available to work.
-                Let's talk about your project.
+                Let&apos;s talk about your project.
             </p>
             <Button
                 btnStyle="bento"
