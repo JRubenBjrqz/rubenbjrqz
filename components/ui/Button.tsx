@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { cva } from 'class-variance-authority'
 import type { ButtonProps } from '@/interfaces'
@@ -31,4 +33,21 @@ export function Button({ className = '', btnStyle, href, ...props }: ButtonProps
         <button className={className} {...props} />
     )
 }
+
+export function ButtonPDF({ className = '', btnStyle, href, ...props }) {
+    const downloadPDF = () => {
+        window.open('/ruben_bojorquez_resume.pdf', '_blank')
+    }
+    className = `inline-flex items-center gap-2 justify-center overflow-hidden rounded-lg text-sm ${buttonVariants({ btnStyle, className })}`
+    return href ? (
+        <Link href={href} className={className} {...props} />
+    ) : (
+        <button
+            onClick={downloadPDF} 
+            className={className} 
+            {...props} 
+        />
+    )
+}
+
 
