@@ -25,7 +25,7 @@ export function Resume({ className = '' }: ResumeProps) {
                     Read.cv
                 </Button>
                 <Button
-                    href="ruben_bojorquez_resume.pdf"
+                    href="https://drive.google.com/file/d/1LHxK26GtgAjtxsigenGkCj9EEYGKOxlm/view?usp=drive_link"
                     btnStyle="bento"
                     className="w-1/2"
                     target="_blank"
