@@ -2,32 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* TODO: Este sirve para cuando selecciones algo cambie el color */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* ::selection {
+} */
+
+@layer base {
+  body {
+    font-family: 'Open Sauce Sans', sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Fraunces', system-ui, -apple-system;
+    font-weight: 700;
+  }
+
+  .font-fraunces {
+    font-family: 'Fraunces', system-ui, -apple-system;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .bento-outline {
+    @apply outline outline-2 outline-offset-0 outline-black;
+  }
+
+  .btn-bento {
+    @apply outline-2 outline-offset-0 outline-black;
+    transition: outline-color 0s, translate 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .btn-bento:hover {
+    @apply outline outline-black translate-y-[-6px] shadow-[6px_6px_0_0_#000];
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .bento-shadow {
+    @apply duration-500 hover:translate-y-[-6px] hover:shadow-[8px_8px_0_0_#000];
+  }
+
+  .card-mask {
+    @apply [mask-image:linear-gradient(to_top,transparent_15%,#000_100%)]
+  }
+
+  .shadow-button-light {
+    box-shadow: 0 0 #0000, 0 0 #0000, inset 0px 1px 0px 0px #fff,
+      0px 0px 0px 1px rgba(0, 0, 0, 0.06), 0px 1px 0px 0px rgba(0, 0, 0, 0.08),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.04), 0px 3px 3px 0px rgba(0, 0, 0, 0.02),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.01);
+  }
+
+  .shadow-button-dark {
+    box-shadow: 0 0 #0000, 0 0 #0000, 0px -1px 0px 0px hsla(0, 0%, 100%, 0.04),
+      0px 0px 0px 1px hsla(0, 0%, 100%, 0.12),
+      0px 0px 1px 0px rgba(0, 0, 0, 0.04), 0px 2px 2px 0px rgba(0, 0, 0, 0.04),
+      0px 4px 2px 0px rgba(0, 0, 0, 0.04), 0px 6px 3px 0px rgba(0, 0, 0, 0.04);
   }
 }
