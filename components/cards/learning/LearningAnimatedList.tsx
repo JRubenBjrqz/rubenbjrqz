@@ -2,7 +2,7 @@
 
 import { cn } from '@/lib/utils'
 import { AnimatedList } from '@/components/ui/AnimatedList'
-import { Topics } from '@/data/topics'
+import { topics } from '@/data/topics'
 import { TopicItem } from '@/components/cards/learning/LearningItem'
 import type { TopicAnimatedListProps } from '@/interfaces'
 
@@ -15,7 +15,7 @@ export function TopicAnimatedList({ className = '' }: TopicAnimatedListProps) {
       )}
     >
       <AnimatedList>
-        {Topics.map((topic, index) => (
+        {topics.map((topic, index) => (
           <TopicItem 
             key={index}
             index={index}

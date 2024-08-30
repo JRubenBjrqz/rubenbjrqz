@@ -6,7 +6,7 @@ export const resume: ResumeDataProps[] = [
     {
         index: 1,
         company: 'Sofía XT',
-        position: 'Frontend Developer',
+        position: 'Frontend Developer & UX/UI Designer',
         logo: logoSofiaXT,
         startDate: '2024',
         endDate: 'Present'

@@ -25,7 +25,7 @@ const avatarVariants = cva(
 export function ImgAvatar({ className = '', size, ...props }: AvatarProps) {
     return (
         <Link
-            href="/about"
+            href="/coming-soon"
             aria-label="About"
             className={avatarVariants({ size, className })}
             {...props}
