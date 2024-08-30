@@ -1,5 +1,5 @@
-import { SimpleLayout } from "@/components/ui/SimpleLayout"
-import { TechnicalSkills } from "@/components/skills/TechnicalSkills"
+import { SimpleLayout } from '@/components/ui/SimpleLayout'
+import { TechnicalSkills } from '@/components/skills/TechnicalSkills'
 
 export const metadata = {
     title: 'Stack',
