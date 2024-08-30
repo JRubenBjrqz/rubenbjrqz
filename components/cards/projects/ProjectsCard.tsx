@@ -10,9 +10,9 @@ export function Projects({ className = '', ...props }: ProjectsProps) {
             <Card.Pill icon={LiaTerminalSolid} className='ml-4'>Projects</Card.Pill>
             <ProjectsMarquee className="card-mask" />
             <Card.Mask 
-                title="What I do"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                href="/projects"
+                title="Work I've Done"
+                description="Designing and developing impactful web applications that solve real-world problems."
+                href="/coming-soon"
                 btnText="View Projects"
             />
         </Card>

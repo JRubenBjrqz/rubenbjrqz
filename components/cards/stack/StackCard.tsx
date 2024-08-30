@@ -12,8 +12,8 @@ export function Stack({ className = '', ...props }: StackProps) {
             <StackOrbitingCircles className="card-mask"/>
             <Card.Mask 
                 title="Stack"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                href="/stack"
+                description="Crafting websites using the latest technologies."
+                href="/coming-soon"
                 btnText="View Stack"
             />
         </Card>
